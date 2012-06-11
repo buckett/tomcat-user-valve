@@ -2,12 +2,14 @@ Tomcat User Valve
 ================
 
 A quick tomcat valve which sets a remote user on a request based on a user's entry
-in a form.
+in a form. It works on Tomcat 5/6.
 
 Installation
 ------------
 
-Drop the jar file into the lib folder at the toplevel of the Tomcat distribution.
+Drop the jar file into the server/lib folder at the toplevel of the Tomcat distribution.
+As it needs to be in the same classloader as org.apache.catalina.valves.ValveBase which
+is normally in catalina.jar
 
 Configuration
 -------------
