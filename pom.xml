@@ -11,8 +11,9 @@ This valve is useful for testing applications that use container based authentic
   <dependencies>
     <dependency>
       <groupId>org.apache.tomcat</groupId>
-      <artifactId>catalina</artifactId>
-      <version>6.0.33</version>
+      <artifactId>tomcat-catalina</artifactId>
+      <version>7.0.42</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
   <build>

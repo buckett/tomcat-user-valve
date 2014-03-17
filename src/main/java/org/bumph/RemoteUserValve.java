@@ -44,8 +44,10 @@ public class RemoteUserValve extends ValveBase {
 				final String credentials = "credentials";
 				final List<String> roles = Collections.emptyList();
 				// Tomcat 6 version:
-				final Principal principal = new GenericPrincipal(null,
-						username, credentials, roles);
+				// final Principal principal = new GenericPrincipal(null,
+				//		username, credentials, roles);
+				// Tomcat 7 version:
+				final Principal principal = new GenericPrincipal(username, credentials, roles);
 
 				request.setUserPrincipal(principal);
 				getNext().invoke(request, response);
